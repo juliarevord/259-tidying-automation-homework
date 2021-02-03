@@ -94,7 +94,7 @@ words_graph <- function(df) {
 }
 print(words_graph)
 
-for (i in df$Film) {
+for (i in df) {
   group = group_by(df,Film)
   words_graph (group)
   print(words_graph)
